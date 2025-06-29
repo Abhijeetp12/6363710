@@ -1,0 +1,38 @@
+1) Understanding Sorting Algorithms
+Sorting algorithms play a vital role in organizing data efficiently, e
+specially in applications such as e-commerce platforms where performance and speed are crucial. 
+Below are some widely used sorting techniques:
+
+Bubble Sort
+Bubble Sort is a simple algorithm that repeatedly compares adjacent elements in a list and
+swaps them if they are in the wrong order. This process continues until the entire list is sorted.
+Although easy to understand and implement, Bubble Sort is not efficient for large datasets due to its high time complexity.
+
+Insertion Sort
+Insertion Sort builds the sorted list one element at a time by picking an item and placing it in
+its appropriate position relative to the already sorted elements. It resembles the way a person
+arranges playing cards in order. This method works efficiently for small datasets or nearly sorted data.
+
+Quick Sort
+Quick Sort is a highly efficient sorting algorithm that uses the divide-and-conquer strategy.
+It selects a pivot element, partitions the array into two sub-arrays—one with elements less than 
+the pivot and one with elements greater than the pivot—and then recursively sorts the sub-arrays. 
+Due to its efficiency and performance on large datasets, Quick Sort is widely preferred in real-world applications.
+
+Merge Sort
+Merge Sort is another divide-and-conquer algorithm that divides the input list into halves, 
+recursively sorts each half, and then merges the sorted halves into a single sorted list. 
+It guarantees consistent performance and is especially useful for sorting linked lists or 
+large datasets where stable sorting is required.
+
+2) Performance Analysis (Bubble Sort vs Quick Sort)
+When it comes to performance, not all sorting algorithms are equal.
+
+Bubble Sort is very basic and easy to understand, but it’s slow. 
+It compares every item with every other item, which takes a lot of time for big lists. 
+Its performance doesn’t improve much even if the list is almost sorted.
+
+Quick Sort, on the other hand, is much faster. It doesn't check each item one by one 
+like Bubble Sort. Instead, it quickly narrows down where items should go using the 
+divide-and-conquer approach. For most real-world cases, Quick Sort is much better and more efficient.
+

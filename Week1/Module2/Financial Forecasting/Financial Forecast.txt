@@ -1,0 +1,21 @@
+1. Understanding Recursive Algorithms
+Recursion is a method in computer science where a function calls itself to solve smaller instances of the same problem. It is especially useful when a task can be broken down into repetitive sub-tasks that follow a clear pattern.
+
+In the context of financial forecasting, recursion can help simplify the logic behind predicting future values. For example, if the value of an investment grows by a certain percentage every year, we can calculate its future value by applying the growth rate repeatedly over the desired number of years.
+
+Instead of using loops, a recursive function handles this by calling itself with an updated value and a reduced number of years until a base condition is met. This approach not only reduces the amount of code but also makes the logic cleaner and more intuitive, particularly in mathematical computations.
+
+4. Analysis
+ Time Complexity
+The recursive algorithm implemented for financial forecasting has a time complexity of O(n), where n is the number of years. This is because the function calls itself once per year until it reaches the base case (years == 0). Therefore, the number of recursive calls increases linearly with the number of years.
+
+ Optimization Considerations
+While recursion is elegant, it can be inefficient for large inputs due to the overhead of maintaining the call stack. Each recursive call consumes memory, and with deep recursion, this may lead to a stack overflow.
+
+To optimize the solution:
+
+For simple use cases like annual financial growth, recursion is safe and readable.
+
+For more complex models or large time spans, an iterative approach may be preferred to conserve memory.
+
+In performance-critical systems, one may also explore memoization or dynamic programming to store and reuse intermediate results (though not required for this linear model).

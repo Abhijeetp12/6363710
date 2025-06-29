@@ -1,0 +1,47 @@
+1. Understanding Linked Lists
+A linked list is a linear data structure where each element (called a node) contains two parts: the data and a reference (or link) to the next node in the sequence. Unlike arrays, linked lists do not require a fixed size at the time of declaration, making them more flexible for dynamic data manipulation.
+
+There are several types of linked lists:
+
+Singly Linked List: Each node points to the next node only. It moves in one direction — from head to tail.
+
+Doubly Linked List: Each node contains two references — one to the next node and one to the previous node. This allows traversal in both directions.
+
+Circular Linked List: The last node points back to the first node, forming a circle. It can be singly or doubly circular.
+
+In this project, we use a singly linked list to manage tasks efficiently. It is simple, memory-efficient, and sufficient for operations like adding, searching, and deleting tasks in a single direction.
+
+4. Analysis
+Time Complexity Analysis:
+
+Add Task:
+
+If the list is empty, the task is added at the beginning in constant time.
+
+If not, it must traverse to the end of the list, making it O(n) in the worst case.
+
+Search Task:
+
+Requires checking each task until the matching taskId is found.
+
+This is a linear search, so the time complexity is O(n).
+
+Traverse Tasks:
+
+Displays all tasks from the beginning to the end.
+
+Time complexity is O(n).
+
+Delete Task:
+
+Finding the task requires traversal, then rearranging the links.
+
+Overall time complexity is O(n).
+
+Advantages of Linked Lists over Arrays for Dynamic Data:
+
+Linked lists can easily grow or shrink without needing to reallocate or copy data, unlike arrays.
+
+Insertion and deletion operations are faster when done at the beginning or middle, as they do not require shifting elements.
+
+Memory is allocated only when needed, so there is no unused memory as often seen in arrays.

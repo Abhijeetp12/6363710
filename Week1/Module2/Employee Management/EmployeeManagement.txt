@@ -1,0 +1,22 @@
+1. Understanding Array Representation
+In programming, an array is a collection of elements stored in a continuous block of memory. 
+Each element can be accessed using its index, starting from zero.
+Arrays are beneficial when need to store a fixed number of items of the same type,
+such as a list of employees. Since all items are stored in adjacent memory locations, 
+accessing any element is very fast. This makes arrays ideal for tasks that require quick retrieval 
+of data.
+
+4. Analysis
+
+Each operation in the employee management system has a different time complexity:
+
+Add: Adding an employee at the end of the array takes constant time—O(1)—if there is available space.
+
+Search: Searching through the array requires checking each element until a match is found, so the time complexity is O(n).
+
+Traverse: Visiting every employee in the list also takes O(n) time.
+
+Delete: Deleting an element may require shifting the remaining elements, making the time complexity O(n).
+
+While arrays are efficient for fast access and simple to use, they have a major limitation: their size is fixed once declared. 
+This means they’re not suitable for cases where the number of records can change frequently. In such dynamic situations, data structures like lists or linked lists are more appropriate.

@@ -1,0 +1,47 @@
+ 1. Understanding Search Algorithms
+In order to build an efficient library management system, it is important to understand the mechanisms used to locate books in a collection. Two commonly used search techniques are:
+
+ Linear Search
+Linear search is a straightforward technique where each element in the list is checked one by one until the desired item is found or the end of the list is reached. It does not require the data to be sorted.
+
+Working Principle:
+Start from the first book and compare each book’s title to the target title. If a match is found, return the book. If the entire list is traversed without finding a match, return "not found".
+
+Use Case:
+Linear search is ideal when dealing with small datasets or when the data is unsorted.
+
+ Binary Search
+Binary search is a much faster method, but it requires the data to be sorted in advance. It repeatedly divides the list into halves and narrows down the search range.
+
+Working Principle:
+Start with the middle book. If it matches the target title, return it. If the target comes before the middle, search the left half. If it comes after, search the right half. Repeat this process until the item is found or the range becomes empty.
+
+Use Case:
+Binary search is suitable for large datasets that are sorted by title.
+
+4. Analysis
+ Time Complexity Comparison
+Operation	Linear Search	Binary Search
+Best Case	O(1)	O(1)
+Average/Worst Case	O(n)	O(log n)
+
+Linear Search takes longer as the number of items increases, especially when the match is at the end or not present.
+
+Binary Search is significantly faster for large sorted datasets due to its logarithmic time complexity.
+
+ When to Use Which Algorithm
+Use Linear Search when:
+
+The list is unsorted.
+
+The dataset is small.
+
+Insertion and deletion operations are frequent and sorting would be inefficient.
+
+Use Binary Search when:
+
+The dataset is sorted.
+
+Fast lookup is a priority.
+
+The collection is large and relatively static.

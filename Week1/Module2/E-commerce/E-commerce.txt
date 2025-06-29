@@ -1,0 +1,42 @@
+1. Understand Asymptotic Notation
+1.1) What is Big O Notation and Why Does It Matter?
+When building a search system for an e-commerce platform, one of the biggest concerns is how fast the code runs especially when there are thousands or even millions of products.
+This is where Big O notation is used. It's a way to describe how the time or space requirements of an algorithm grow as the input size increases.
+For example:
+If a search algorithm has O(n) time, it means that the time it takes to find an item increases linearly with the number of products.
+If it's O(log n), then even if the product list gets huge, the search still remains pretty fast — it grows very slowly.
+So, Big O helps us compare algorithms without worrying about the specific hardware or code — it's a universal way to measure performance.
+1.2)  Best, Average, and Worst-Case Scenarios in Search Operations
+For analyzing how a search algorithm behaves, we don’t just look at one scenario. We need to consider three possibilities:
+Best Case:
+This is the ideal situation — maybe the product we're searching for is right at the start of the list. For example, in linear search, the best case is O(1) because you find it instantly.
+Average Case:
+On average, the item might be somewhere in the middle. So, for a linear search, we had typically check about half the items, giving O(n) time in most practical cases.
+Worst Case:
+This is the situation where the item is either at the very end or not in the list at all. For linear search, that still means O(n) time. For binary search (on a sorted list), even the worst case is pretty efficient at O(log n).
+
+2) Analysis: Comparing Linear Search and Binary Search
+In our e-commerce platform, the search function plays a critical role in helping users quickly find products. Let’s look at how the two search algorithms — Linear Search and Binary Search — compare in terms of efficiency and usage:
+
+2.1) Time Complexity Overview
+Algorithm	Best Case	Average Case	Worst Case
+Linear Search	O(1)	O(n)	O(n)
+Binary Search	O(1)	O(log n)	O(log n)
+
+Linear Search goes through each product one by one. It’s simple and doesn’t need sorted data.
+
+Binary Search is much faster because it divides the search range in half every time — but it requires the product list to be sorted.
+
+ 2.2) Suitability in Real E-Commerce Use
+Linear Search is better when:
+The list is unsorted
+ Have a small number of products
+Don’t want the overhead of sorting
+
+Binary Search is ideal when:
+The product list is large
+Already maintain a sorted catalog
+Want to ensure faster lookup time
+
+ 2.3) Conclusion
+For a small or test e-commerce platform, Linear Search may be sufficient. But for a real-world app with thousands of products and frequent searches, Binary Search is much more efficient — as long as your data is sorted.

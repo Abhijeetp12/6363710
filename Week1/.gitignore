@@ -1,0 +1,58 @@
+# Visual Studio related
+.vs/
+*.suo
+*.user
+*.aps
+*.bsc
+*.map
+*.ncb
+*.opensdf
+*.pdb
+*.obj
+*.ilk
+*.log
+*.lib
+*.sbr
+*.res
+*.pch
+*.exp
+*.idb
+*.ipdb
+*.tlog
+*.vshost.*
+*.opendb
+*.sdf
+*.bak
+*.tmp
+*.patch
+
+# Build results
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+*.exe
+*.dll
+*.pfx
+*.snk
+*.csproj.user
+*.config.orig
+*.xps
+*.xap
+*.application
+*.publish
+*.cache
+
+# NuGet packages
+packages/
+*.nupkg
+*.nuget.log
+
+# Rider
+.idea/
+
+# macOS specific
+.DS_Store
+
+# Other common temporary files
+Thumbs.db
