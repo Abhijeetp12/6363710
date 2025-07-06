@@ -1,0 +1,37 @@
+1. What is ORM?
+Object-Relational Mapping (ORM) is a programming technique that facilitates the interaction between object-oriented programming languages and relational databases. 
+In the context of C#, ORM enables developers to represent database tables as C# classes, where each class corresponds to a table and each property maps to a column in that table. 
+This abstraction allows developers to perform database operations such as insert, update, delete, and query using object-oriented syntax rather than writing raw SQL queries.
+
+Benefits of ORM:
+Increased Productivity: Developers can work directly with objects in the application code without manually handling SQL statements.
+Improved Maintainability: Changes in the data model can be managed through code-first migrations, reducing the need to alter SQL scripts manually.
+Abstraction from SQL: ORM handles the underlying SQL generation and database interaction, allowing developers to focus on business logic instead of database syntax.
+
+2. EF Core vs. Entity Framework (EF6)
+
+Entity Framework (EF) is Microsoft's ORM framework for .NET. It exists in two primary versions: Entity Framework 6 (EF6) and Entity Framework Core (EF Core).
+While both serve the purpose of bridging the gap between C# objects and relational databases, they differ significantly in architecture and capabilities.
+
+Entity Framework Core (EF Core):
+Designed to be lightweight and modular.
+Cross-platform compatibility, supporting Windows, Linux, and macOS.
+Offers modern features such as asynchronous LINQ queries, support for NoSQL providers, and compiled queries.
+Continues to receive active updates and feature enhancements from Microsoft.
+
+Entity Framework 6 (EF6):
+Limited to the Windows platform and built on the older .NET Framework.
+Considered more mature and stable, especially for legacy enterprise applications.
+Lacks some modern functionalities like cross-platform support and certain performance optimizations found in EF Core.
+Generally not recommended for new applications due to its limited flexibility and development activity.
+
+3. Key Features Introduced in EF Core 8.0
+
+Entity Framework Core 8.0 introduces a range of enhancements aimed at improving performance, flexibility, and data handling capabilities. 
+These features are particularly beneficial for modern application development involving large datasets and dynamic data structures.
+
+Features:
+JSON Column Mapping: Enables mapping JSON data stored in database columns directly to C# objects, allowing better handling of semi-structured data.
+Compiled Models: Improves application startup and query execution performance by allowing models to be compiled ahead of time.
+Interceptors: Offers the ability to intercept database commands, which is useful for implementing custom logging, validation, or monitoring logic during query execution.
+Improved Bulk Operations: Enhances the performance and reliability of bulk data operations, which is essential for applications that manage large volumes of records efficiently.
