@@ -1,0 +1,2 @@
+[13-07-2025 15:34:59] This is a test exception for CustomExceptionFilter.
+[13-07-2025 15:38:22] This is a test exception for CustomExceptionFilter.
