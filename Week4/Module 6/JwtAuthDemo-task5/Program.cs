@@ -29,7 +29,7 @@ builder.Services.AddAuthentication(options =>
     };
 });
 
-// ✅ This was missing:
+
 builder.Services.AddAuthorization();
 
 builder.Services.AddEndpointsApiExplorer();
